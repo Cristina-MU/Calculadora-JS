@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculadora.css">
+    <script src="calculadora.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my calculator</h1>
+    </header>
+
+    <div class="container">
+        <input type="text" class="screen" id="screen" disabled />
+        <!-- botones y operadores -->
+        <div class="keys">
+            <input type="button" value="C" class="btn" id="ac" onclick="clean()"/>
+            <input type="button" value="DEL" class="btn" id="del" onclick="del()"/>
+            <input type="button" value="√" class="operator" onclick="pulsoRaiz()"/>
+            <input type="button" value="/" class="operator" onclick="pulsoDivi()"/>
+            
+            <input type="button" value="7" class="btn" onclick="pulsoNum(7)"/>
+            <input type="button" value="8" class="btn" onclick="pulsoNum(8)"/>
+            <input type="button" value="9" class="btn" onclick="pulsoNum(9)"/>
+
+            <input type="button" value="*" class="operator" onclick="pulsoMulti()"/>
+            <input type="button" value="4" class="btn" onclick="pulsoNum(4)"/>
+            <input type="button" value="5" class="btn" onclick="pulsoNum(5)"/>
+            <input type="button" value="6" class="btn" onclick="pulsoNum(6)"/>
+
+            <input type="button" value="-" class="operator" onclick="pulsoResta()"/>
+            <input type="button" value="1" class="btn" onclick="pulsoNum(1)"/>
+            <input type="button" value="2" class="btn" onclick="pulsoNum(2)"/>
+            <input type="button" value="3" class="btn" onclick="pulsoNum(3)"/>
+
+            <input type="button" value="+" class="operator" onclick="pulsoSuma()"/>
+            <input type="button" value="^" class="operator" onclick="pulsoPotencia()"/>
+            
+            <input type="button" value="0" class="btn" onclick="pulsoNum(0)"/>
+            <input type="button" value="." class="operator" onclick="pulsoPunto()"/>
+            <input type="button" value="=" class="operator" id="igual" onclick="pulsoIgual()"/>
+            
+        </div>
+    </div>
+</body>
+</html>
